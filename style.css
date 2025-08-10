@@ -133,6 +133,9 @@ body {
 }
 
 @media (min-width: 450px) {
+  body {
+    min-height: 100vh;
+  }
   .main-section {
     flex-direction: row;         
     max-width: 800px;
