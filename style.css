@@ -1,0 +1,246 @@
+:root {
+    --Very-dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+   --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+body {
+    background-color: var(--Light-Grayish-Blue);
+    font-family: "Manrope";
+    margin-top: 40px;
+    padding: 15px;
+}
+
+.main-section {
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.firstImage {
+    display: block;
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.main-section h1 {
+    padding: 20px 30px 0px 30px;
+    font-size: 19px;
+    color: var(--Very-dark-Grayish-Blue);
+    font-weight: 700;
+}
+
+.main-section p {
+    margin-top: -9px;
+    padding: 0px 30px 10px 30px;
+    font-size: 15px;
+    color: var(--Desaturated-Dark-Blue);
+    font-weight: 500;
+
+}
+
+.footer-section {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px 15px 30px;
+}
+
+.footerImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.spanSection p {
+    color: var(--Very-dark-Grayish-Blue);
+    font-weight: 700; 
+    font-size: 15px;
+    padding-top: 29px;
+    padding-left: 15px;
+}
+
+.spanSection span {
+    color: var(--Desaturated-Dark-Blue);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.share {
+    background-color: var(--Light-Grayish-Blue);
+    padding: 10px;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+} 
+
+.shareSection {
+    display: none;
+    animation: fadeIn 0.5s ease-out forwards
+}
+
+.share-section {
+    background-color: var(--Very-dark-Grayish-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.share-section h1 {
+    color: var(--Light-Grayish-Blue);
+    font-weight: 200;
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-top: -10px;
+    margin-left: -33px;
+}
+
+.socials {
+    margin-left: -100px;
+}
+
+.social1 {
+    padding: 5px;
+    width: 17px;
+    height: auto;
+}
+
+.iconShare {
+   background-color: var(--Light-Grayish-Blue);
+    padding: 5px;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 450px) {
+  .main-section {
+    flex-direction: row;         
+    max-width: 800px;
+    margin: 40px auto;
+    align-items: stretch;
+    overflow: visible;
+  }
+
+  .firstImage {
+    width: 40%;
+    height: auto;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 12px 0 0 12px;
+    display: block;
+  }
+
+  .content {
+    width: 60%;
+    padding: 28px 30px;
+    display: flex;
+    flex-direction: column;      
+    justify-content: center;
+    position: relative;            
+  }
+
+  .main-section h1 {
+    padding: 0;
+    margin: 0 0 12px 0;
+    font-size: 20px;
+  }
+
+  .main-section p {
+    margin: 0 0 18px 0;
+    padding: 0;
+    font-size: 15px;
+  }
+
+  .spanSection p {
+    padding-top: 18px;
+  }
+
+  .footer-section {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-top: auto;       
+    gap: 12px;
+  }
+
+  .share {
+   margin-left: auto;
+    width: 12px;
+    height: 12px;
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .shareSection{
+    display: none;
+  }
+  
+  .share-section {
+     position: absolute;
+     right: -80px;
+     bottom: 64px;
+     width: 220px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 45px;
+    display: flex;
+    
+}
+    .share-section h1 {
+    color: var(--Light-Grayish-Blue);
+    font-weight: 200;
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: -40px;
+}
+
+.socials {
+    margin-right: -30px;
+}
+
+.social1 {
+    padding: 5px;
+    width: 17px;
+    height: auto;
+}
+
+.iconShare {
+    display: none;
+}
+
+}
+
+
+
+
+.attribution {
+    padding-top: 10px;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
