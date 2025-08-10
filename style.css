@@ -135,11 +135,17 @@ body {
 @media (min-width: 450px) {
   body {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
   }
   .main-section {
     flex-direction: row;         
     max-width: 800px;
-    margin: 40px auto;
+    margin: 0 auto;
     align-items: stretch;
     overflow: visible;
   }
